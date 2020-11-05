@@ -1,0 +1,23 @@
+  
+  
+  
+  
+server:
+   port: 8083
+
+
+spring:
+    message: hello coder in testing phase
+    
+    datasource:
+          name: my_database
+          url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/my_database_For_Test
+          username: root
+          password: root
+          driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      properties:
+       hibernate: 
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        ddl-auto: update
+    
